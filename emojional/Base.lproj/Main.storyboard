@@ -16,15 +16,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="scB-Ot-PTH">
-                                <rect key="frame" x="176" y="459" width="58" height="77"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="scB-Ot-PTH">
+                                <rect key="frame" x="176" y="448" width="58" height="77"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="54"/>
                                 <state key="normal" title="🏋🏾‍♀️"/>
+                                <connections>
+                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pTa-is-ulx"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OKn-eZ-yo7">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OKn-eZ-yo7">
                                 <rect key="frame" x="176" y="215" width="62" height="81"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="57"/>
                                 <state key="normal" title="🧘🏼‍♂️"/>
+                                <connections>
+                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1do-3Y-4OB"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -33,6 +39,7 @@
                             <constraint firstItem="scB-Ot-PTH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="176" id="0JV-T9-7aP"/>
                             <constraint firstItem="scB-Ot-PTH" firstAttribute="top" secondItem="OKn-eZ-yo7" secondAttribute="bottom" constant="163" id="JG3-ha-tHn"/>
                             <constraint firstItem="OKn-eZ-yo7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="176" id="W5W-C3-6Gz"/>
+                            <constraint firstItem="OKn-eZ-yo7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="171" id="cND-y3-zUh"/>
                             <constraint firstItem="scB-Ot-PTH" firstAttribute="top" secondItem="OKn-eZ-yo7" secondAttribute="bottom" constant="152" id="cU1-Ud-XeY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OKn-eZ-yo7" secondAttribute="trailing" constant="176" id="uOc-Tq-bch"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="scB-Ot-PTH" secondAttribute="trailing" constant="180" id="yQp-Rz-jJs"/>
